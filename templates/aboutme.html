@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+	<div>
+		<img src="{% static 'china.jpg' %}"/>
+		<form method="post" enctype="multipart/form-data">
+			<input type="file" name="file"><br>
+			<input type="submit" value="Upload">
+		</form>
+	</div>
+	<div class="posts">
+		<p>Name: ylsi</p>
+		<p>birthday: </p>
+	</div>
+{% endblock %}
